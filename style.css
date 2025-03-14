@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  background: #1f1f1f;
+}
+
+.logo {
+  width: 60px;  /* Small logo size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.glow-text {
+  font-size: 24px;
+  color: #ff9800;
+  text-shadow: 0 0 5px #ff9800, 0 0 10px #ff9800;
+  margin-top: 10px;
+}
+
+/* Main Container */
+.container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(31, 31, 31, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styles */
+.inputBox {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.inputBox label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.inputBox input, .inputBox textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff9800;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Report Options Section */
+.report-options {
+  margin: 20px 0;
+}
+
+.report-options p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ff9800;
+}
+
+/* Report Buttons */
+.report-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #a682ff, #9162ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.report-btn:hover {
+  background: linear-gradient(90deg, #9162ff, #a682ff);
+  transform: translateY(-2px);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff9800, #e68900);
+  border: none;
+  border-radius: 5px;
+  color: #121212;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #e68900, #ff9800);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+                        }
