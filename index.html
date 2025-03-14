@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blacklist Cookies Hub | Report</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header with Logo and Heading -->
+  <header>
+    <img src="https://i.postimg.cc/nhFRcCDF/IMG-4431.png" alt="Cookie Hub Logo" class="logo">
+    <h1 class="glow-text">Blacklist Cookies Hub</h1>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h2>Report an Issue</h2>
+    <form id="reportForm">
+      <!-- Reporter Discord Username -->
+      <div class="inputBox">
+        <label for="discordUsername">Discord Username:</label>
+        <input type="text" id="discordUsername" name="discordUsername" placeholder="Your Discord username" required>
+      </div>
+
+      <!-- Report Type Selection -->
+      <div class="report-options">
+        <p>Choose your report:</p>
+        <button type="button" class="report-btn" onclick="selectReport('staff')">Report a Staff</button>
+        <button type="button" class="report-btn" onclick="selectReport('bug')">Report a Bug</button>
+        <button type="button" class="report-btn" onclick="selectReport('member')">Report a Member</button>
+      </div>
+
+      <!-- Hidden field for storing the selected report type -->
+      <input type="hidden" id="reportType" name="reportType" value="">
+
+      <!-- Report Form Fields for Staff (initially hidden) -->
+      <div class="form-section" id="staffForm" style="display: none;">
+        <div class="inputBox">
+          <label for="staffUsername">Reported Staff Username:</label>
+          <input type="text" id="staffUsername" name="staffUsername" placeholder="Enter staff username" required>
+        </div>
+        <div class="inputBox">
+          <label for="staffReason">Reason for Reporting Staff:</label>
+          <textarea id="staffReason" name="staffReason" placeholder="Explain why..." required></textarea>
+        </div>
+      </div>
+
+      <!-- Report Form Fields for Member (initially hidden) -->
+      <div class="form-section" id="memberForm" style="display: none;">
+        <div class="inputBox">
+          <label for="memberUsername">Reported Member Username:</label>
+          <input type="text" id="memberUsername" name="memberUsername" placeholder="Enter member username" required>
+        </div>
+        <div class="inputBox">
+          <label for="memberReason">Reason for Reporting Member:</label>
+          <textarea id="memberReason" name="memberReason" placeholder="Explain why..." required></textarea>
+        </div>
+      </div>
+
+      <!-- Report Form Fields for Bug (initially hidden) -->
+      <div class="form-section" id="bugForm" style="display: none;">
+        <div class="inputBox">
+          <label for="bugTitle">Bug Title:</label>
+          <input type="text" id="bugTitle" name="bugTitle" placeholder="Enter bug title" required>
+        </div>
+        <div class="inputBox">
+          <label for="bugDescription">Bug Description:</label>
+          <textarea id="bugDescription" name="bugDescription" placeholder="Describe the bug in detail" required></textarea>
+        </div>
+      </div>
+
+      <!-- Submit Button for the Report -->
+      <button type="submit" class="submit-btn">Submit Report</button>
+    </form>
+  </div>
+</body>
+          </html>
